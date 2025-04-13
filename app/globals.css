@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Goldfish Orange + Off-White Theme */
+    --background: 0 0% 0%; /* Off-white background */
+    --background-color: #ecdfce;
+    --foreground: 0 0% 100%; /* White text */
+    --card: 0 0% 100%; /* White cards */
+    --card-foreground: 0 0% 100%; /* White text for cards */
+    --popover: 0 0% 100%; /* White popovers */
+    --popover-foreground: 0 0% 100%; /* White text for popovers */
+    --primary: 0 0% 0%; /* Bright Orange (Goldfish orange) */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+    --secondary: 210 40% 96.1%; /* Lighter secondary color */
+    --secondary-foreground: 0 0% 100%; /* White text on secondary */
+    --muted: 0 0% 100%; /* Light gray muted */
+    --muted-foreground: 0 0% 100%; /* White text for muted */
+    --accent: 210 40% 96.1%; /* Light accent color */
+    --accent-foreground: 0 0% 100%; /* White text for accent */
+    --destructive: 0 84.2% 60.2%; /* Red for destructive */
+    --destructive-foreground: 0 0% 100%; /* White text on destructive */
+    --border: 214.3 31.8% 91.4%; /* Light border */
+    --input: 214.3 31.8% 91.4%; /* Light input background */
+    --ring: 36 100% 60%; /* Ring color to match primary (orange) */
+    --radius: 0.5rem; /* Border radius */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%; /* Dark background for dark mode */
+    --foreground: 210 40% 98%; /* White text for dark mode */
+    --card: 222.2 84% 4.9%; /* Dark card background */
+    --card-foreground: 210 40% 98%; /* White text for cards in dark mode */
+    --popover: 222.2 84% 4.9%; /* Dark popover background */
+    --popover-foreground: 210 40% 98%; /* White text for popovers in dark mode */
+    --primary: 36 100% 60%; /* Bright Orange (same for dark mode) */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+    --secondary: 217.2 32.6% 17.5%; /* Dark secondary */
+    --secondary-foreground: 0 0% 100%; /* White text for secondary */
+    --muted: 217.2 32.6% 17.5%; /* Muted dark background */
+    --muted-foreground: 0 0% 100%; /* White text for muted in dark mode */
+    --accent: 217.2 32.6% 17.5%; /* Dark accent */
+    --accent-foreground: 0 0% 100%; /* White text for accent */
+    --destructive: 0 62.8% 30.6%; /* Red destructive in dark mode */
+    --destructive-foreground: 0 0% 100%; /* White text on destructive in dark mode */
+    --border: 217.2 32.6% 17.5%; /* Dark border */
+    --input: 217.2 32.6% 17.5%; /* Dark input background */
+    --ring: 36 100% 60%; /* Ring color to match primary (orange) */
+  }
+}
+.bg-background {
+  background-color: var(--background-color);
+}
+
+.bg-muted {
+  background-color: #ecdfce; /* Example: muted color */
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
